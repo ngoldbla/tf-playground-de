@@ -1,23 +1,27 @@
-# Deep playground
+# Deep Playground
 
-Deep playground is an interactive visualization of neural networks, written in
-TypeScript using d3.js. We use GitHub issues for tracking new requests and bugs.
-Your feedback is highly appreciated!
+Deep Playground ist eine interaktive Visualisierung neuronaler Netzwerke, geschrieben in
+TypeScript mit d3.js. Wir verwenden GitHub Issues für das Verfolgen neuer Anfragen und Fehler.
+Ihr Feedback wird sehr geschätzt!
 
-**If you'd like to contribute, be sure to review the [contribution guidelines](CONTRIBUTING.md).**
+**Wenn Sie beitragen möchten, lesen Sie bitte die [Richtlinien für Beiträge](CONTRIBUTING.md).**
 
-## Development
+## Entwicklung
 
-To run the visualization locally, run:
-- `npm i` to install dependencies
-- `npm run build` to compile the app and place it in the `dist/` directory
-- `npm run serve` to serve from the `dist/` directory and open a page on your browser.
+Um die Visualisierung lokal auszuführen:
+- `npm i` um Abhängigkeiten zu installieren
+- `npm run build` um die App zu kompilieren und im `dist/`-Verzeichnis abzulegen
+- `npm run serve` um vom `dist/`-Verzeichnis zu dienen und eine Seite in Ihrem Browser zu öffnen.
 
-For a fast edit-refresh cycle when developing run `npm run serve-watch`.
-This will start an http server and automatically re-compile the TypeScript,
-HTML and CSS files whenever they change.
+Für einen schnellen Bearbeiten-Aktualisieren-Zyklus während der Entwicklung führen Sie `npm run serve-watch` aus.
+Dies startet einen HTTP-Server und kompiliert die TypeScript-, HTML- und CSS-Dateien automatisch neu,
+wann immer sie sich ändern.
 
-## For owners
-To push to production: `git subtree push --prefix dist origin gh-pages`.
+## Für Eigentümer
+Um in die Produktion zu übertragen: `git subtree push --prefix dist origin gh-pages`.
 
-This is not an official Google product.
+## Deutsche Version
+
+Diese deutsche Übersetzung wurde für "Die Entwicklung und Grundlagen der KI" (Dr. Dylan Goldblatt, Kennesaw State University) erstellt.
+
+Dies ist kein offizielles Google-Produkt.

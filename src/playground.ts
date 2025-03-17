@@ -73,21 +73,21 @@ let INPUTS: {[name: string]: InputFeature} = {
 };
 
 let HIDABLE_CONTROLS = [
-  ["Show test data", "showTestData"],
-  ["Discretize output", "discretize"],
-  ["Play button", "playButton"],
-  ["Step button", "stepButton"],
-  ["Reset button", "resetButton"],
-  ["Learning rate", "learningRate"],
-  ["Activation", "activation"],
-  ["Regularization", "regularization"],
-  ["Regularization rate", "regularizationRate"],
-  ["Problem type", "problem"],
-  ["Which dataset", "dataset"],
-  ["Ratio train data", "percTrainData"],
-  ["Noise level", "noise"],
-  ["Batch size", "batchSize"],
-  ["# of hidden layers", "numHiddenLayers"],
+  ["Testdaten anzeigen", "showTestData"],
+  ["Ausgabe diskretisieren", "discretize"],
+  ["Start-Button", "playButton"],
+  ["Schritt-Button", "stepButton"],
+  ["Zurücksetzen-Button", "resetButton"],
+  ["Lernrate", "learningRate"],
+  ["Aktivierungsfunktion", "activation"],
+  ["Regularisierung", "regularization"],
+  ["Regularisierungsrate", "regularizationRate"],
+  ["Problemtyp", "problem"],
+  ["Welcher Datensatz", "dataset"],
+  ["Verhältnis Trainingsdaten", "percTrainData"],
+  ["Rauschpegel", "noise"],
+  ["Batch-Größe", "batchSize"],
+  ["Anzahl versteckter Ebenen", "numHiddenLayers"],
 ];
 
 class Player {
@@ -696,9 +696,9 @@ function addPlusMinusControl(x: number, layerIdx: number) {
       .attr("class", "material-icons")
       .text("remove");
 
-  let suffix = state.networkShape[i] > 1 ? "s" : "";
+  let suffix = state.networkShape[i] > 1 ? "en" : "";
   div.append("div").text(
-    state.networkShape[i] + " neuron" + suffix
+    state.networkShape[i] + " Neuron" + suffix
   );
 }
 
@@ -945,8 +945,8 @@ function reset(onStartup=false) {
   }
   player.pause();
 
-  let suffix = state.numHiddenLayers !== 1 ? "s" : "";
-  d3.select("#layers-label").text("Hidden layer" + suffix);
+  let suffix = state.numHiddenLayers !== 1 ? "n" : "";
+  d3.select("#layers-label").text("Versteckte Ebene" + suffix);
   d3.select("#num-layers").text(state.numHiddenLayers);
 
   // Make a simple network.
