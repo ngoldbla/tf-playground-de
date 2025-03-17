@@ -26,8 +26,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes installiert haben:
 1. **Klonen Sie das Repository**:
    Öffnen Sie ein Terminal und führen Sie folgenden Befehl aus:
    ```
-   git clone https://github.com/tensorflow/playground.git tf-playground-de
+   git clone https://ngoldbla/tf-playground-de/playground.git tf-playground-de
    cd tf-playground-de
+
    ```
 
 2. **Installieren Sie die Abhängigkeiten**:
